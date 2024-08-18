@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/searchPage.css">
+<div class="search-container">
+    
+    <div class="search-result-container">
+        <div class="padding-16">
+            
+            <div class="num-found">
+                <p>Tìm thấy <span id="numfound">{{numfound}}</span> kết quả.</p>
+            </div>
+            <div class="display-set-container flex-style flex-column">
+                <table class="margin-top-22">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Mẫu Nhãn</th>
+                            <th>Nhãn Hiệu</th>
+                            <th>Nhóm</th>
+                            <th>Trạng Thái</th>
+                            <th>Ngày Nộp Đơn</th>
+                            <th>Số Đơn</th>
+                            <th>Đại diện SHCN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{{dataSearched}}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {{> pageOption}}
+    </div>
+</div>

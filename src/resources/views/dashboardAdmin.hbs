@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="/css/dashboard.css">
+<div class="search-container ">
+    <div class="search-result-container line-heigh-15 flex-style margin-bot-14vh flex-column">
+        <div class="padding-16 flex-grow-1 flex-style flex-column">
+            <div class="small-title flex-style justify-spbt">
+                <p>Sửa vai trò người dùng</p>
+                <i class="gg-push-chevron-up cursor-pointer float-right list-close-btn"></i>
+                <i class="gg-push-chevron-down cursor-pointer float-right list-open-btn disp-none"></i>
+            </div>
+            <div class="user-list-container">
+                <form method="post" action="/user/dashboard/admin" class="user-search-container">
+                    <input type="text" placeholder="Tìm theo email" name="email" class="input-spsearch margin-bot-8">
+                    <button type="submit" class="button-style">Tìm kiếm</button>
+                    <button type="submit" class="button-style float-right">Lưu</button>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td>Tên</td>
+                                <td>Email</td>
+                                <td>Số điện thoại</td>
+                                <td>Admin</td>
+                                <td>Leader</td>
+                                <td>Editor</td>
+                                <td>Viewer</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{{userList}}}
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="report-container">
+                <p class="small-title">Cấp đơn chỉnh sửa</p>
+                <form method="post" action="/user/dashboard/admin" class="user-search-container">
+                    <input type="text" placeholder="Tìm theo email" class="input-spsearch margin-bot-8"
+                        name="staff_email">
+                    <button type="submit" class="button-style">Tìm kiếm</button>
+                    <button type="submit" class="button-style float-right">Lưu</button>
+                    <table class="margin-bot-24">
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td>Tên</td>
+                                <td>Email</td>
+                                <td>Số điện thoại</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{{staffList}}}
+                        </tbody>
+                    </table>
+                    {{{reportContent}}}
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

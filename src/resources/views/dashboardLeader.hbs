@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/css/dashboard.css">
+<div class="search-container ">
+    <div class="search-result-container line-heigh-15 flex-style flex-column">
+        <div class="padding-16">
+            <p class="small-title">Thông tin chỉnh sửa</p>
+            <form action="/user/dashboard/leader?so_don={{don_chinh_sua}}" method="POST" class="flex-style">
+                <button type="submit" class="button-style" name="action" value="thong_qua">Thông qua</button>
+                <button type="submit" class="button-style" name="action" value="tu_choi">Từ chối</button>
+                <textarea type="text" name="ly_do" placeholder="Lý do từ chối" class="padding-8 select-box"></textarea>
+            </form>
+            <div class="grid-style grid-col-3-1 margin-top-24 ">
+                <div class="thong-tin-sua margin-right-8">
+                    <div>
+                        <p>Editer <span class="bold">{{editor.name}}</span> với email <span
+                                class="bold">{{editor.email}}</span> | {{editor.submitDate}}
+                        </p>
+                    </div>
+                    <div class="margin-right-8">
+                        {{{editedData}}}
+                    </div>
+                </div>
+                <div class="yeu-cau-sua">
+                    <p>Người dùng <span class="bold">{{reportData.name}}</span> với email <span
+                            class="bold">{{reportData.email}}</span> | {{reportData.submitdate}}
+                    </p>
+                    <p><span class="bold">Nội dung:
+                        </span>{{reportData.report}}</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="search-result-container line-heigh-15 flex-style margin-bot-14vh flex-column">
+        <div class="padding-16 flex-grow-1 flex-style flex-column">
+            <div class="list-report-container">
+                <p class="small-title margin-bot-16">Đơn chỉnh sửa</p>
+                <div class="user-search-container ">
+                    <div class="editor-list margin-bot-24">
+                        {{{editorList}}}
+                    </div>
+                    {{{reportList.html}}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

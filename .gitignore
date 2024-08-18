@@ -19,4 +19,4 @@ Thumbs.db
 .env
 
 # Picture/Image
-src/img/products_logo
+src/public/img/products_logo

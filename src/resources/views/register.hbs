@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="/css/user.css">
+<div class="search-container ">
+    <div class="search-result-container line-heigh-15 flex-style ">
+        <div class="padding-16 flex-style login-container flex-column">
+            <h1 class="txt-align margin-bot-24">Đăng ký</h1>
+            <form action="/user/register" method="POST">
+                <div class="flex-style margin-bot-24 flex-column">
+                    <input type="email" id="email" name="email" placeholder="Email" class="input-sphsearch flex-grow-1"
+                        required value="{{inputData.email}}">
+                    <span class="err-message">{{err.emailErr}}</span>
+                </div>
+                <div class="flex-style margin-bot-24 flex-column">
+                    <input type="text" id="name" name="name" placeholder="Tên (VD: Nguyễn Văn A...)"
+                        class="input-sphsearch flex-grow-1" required value="{{inputData.name}}">
+                </div>
+                <div class="flex-style margin-bot-24 flex-column">
+                    <input type="password" id="password" name="password" placeholder="Mật khẩu"
+                        class="input-sphsearch flex-grow-1" required>
+                    <span class="err-message">{{err.passErr}}</span>
+                </div>
+                <div class="flex-style margin-bot-24 flex-column">
+                    <input type="password" id="password2" name="password2" placeholder="Nhập lại mật khẩu"
+                        class="input-sphsearch flex-grow-1" required>
+                    <span class="err-message">{{err.pass2Err}}</span>
+                </div>
+                <div class="flex-style margin-bot-24 flex-column">
+                    <input type="text" id="phonenumber" name="phonenumber" placeholder="Số điện thoại"
+                        class="input-sphsearch flex-grow-1" required value="{{inputData.phonenumber}}">
+                    <span class="err-message">{{err.phonenumberErr}}</span>
+                </div>
+                <div class="flex-style margin-bot-24 justify-flex-end">
+                    <span>Đã có tài khoản <a href="/user/login">Đăng nhập</a></span>
+                </div>
+                <div class="flex-style">
+                    <input type="submit" value="Đăng ký" class="flex-grow-1 login-btn">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

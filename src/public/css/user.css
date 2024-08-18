@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* reuse style */
+.line-heigh-15 {
+  line-height: 1.5;
+}
+
+.title {
+  color: #3c4043;
+  font-size: 22px;
+  user-select: none;
+  margin-left: 10px;
+}
+
+.small-title {
+  background-color: #2F77A9;
+  padding: 10px;
+  color: white;
+  border: solid 1px rgb(163, 163, 163);
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+.grid-style {
+  display: grid;
+}
+
+.grid-col-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-col-5-1 {
+  grid-template-columns: 5fr 1fr;
+}
+
+.grid-col-1-2-2 {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.grid-col-1-2-4 {
+  grid-template-columns: 1fr 2fr 4fr;
+}
+
+.grid-col-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-col-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-col-1-1 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-col-1-3 {
+  grid-template-columns: 1fr 3fr;
+}
+
+.width-22per {
+  width: 22%;
+}
+
+.usersl-none {
+  user-select: none;
+}
+
+.opacity-06 {
+  opacity: 0.6;
+}
+
+.padding-24 {
+  padding: 24px;
+}
+
+.padding-16 {
+  padding: 16px;
+}
+
+.margin-5 {
+  margin: 5px;
+}
+
+.margin-8 {
+  margin: 8px;
+}
+
+.margin-16 {
+  margin: 16px;
+}
+
+.margin-right-10vh {
+  margin-right: 10vh;
+}
+
+.margin-top-16 {
+  margin-top: 16px;
+}
+
+.margin-top-24 {
+  margin-top: 24px;
+}
+
+.margin-top-22 {
+  margin-top: 20px;
+}
+
+.margin-top-48 {
+  margin-top: 48px;
+}
+
+.margin-bot-8 {
+  margin-bottom: 8px;
+}
+
+.margin-bot-24 {
+  margin-bottom: 24px;
+}
+
+.margin-left-16 {
+  margin-left: 16px;
+}
+
+.container {
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.flex-style {
+  display: flex;
+}
+
+.spa-btw {
+  justify-content: space-between;
+}
+
+.height-40 {
+  height: 48px !important;
+}
+
+.width-80 {
+  width: 80px !important;
+}
+
+.margin-left-24 {
+  margin-left: 24px;
+}
+
+.button-style {
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px 20px;
+  text-decoration: none;
+  background-color: rgb(2, 137, 190);
+  color: rgb(255, 255, 255);
+}
+
+.login-btn {
+  border: none;
+  cursor: pointer;
+  background-color: rgb(2, 137, 190);
+  color: white;
+  padding: 10px;
+}
+
+.login-btn:hover {
+  background-color: rgb(1, 109, 151);
+}
+
+.button-style:hover {
+  color: rgba(255, 255, 255, 0.2);
+  background-color: rgb(5, 112, 155);
+}
+
+.disp-none {
+  display: none;
+}
+
+.box-item {
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  padding: 7px;
+  color: black;
+  width: fit-content;
+  background-color: white;
+}
+
+.box-item:hover {
+  opacity: 0.8;
+}
+
+.box-item-selected {
+  background-color: #0069ff;
+  color: white;
+}
+
+.err-message {
+  color: red;
+  font-size: 13px;
+  margin: 10px 0 -10px 10px;
+}
+
+.box {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  outline: none;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.check-box {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  outline: none;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.check-box:active {
+  transform: translateY(4px);
+}
+
+.input-sphsearch {
+  padding: 0 10px;
+  border: 1px solid #b0b3b6;
+  outline: none;
+  border-radius: 8px;
+  font-size: 16px;
+  height: 40px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.txt-align {
+  text-align: center;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-4 {
+  flex-grow: 4;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px 10px;
+  color: black;
+  line-height: 1.5em;
+  vertical-align: top;
+  border: 1px solid gray;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.successed {
+  font-weight: 550;
+  padding: 5px 8px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(39, 218, 39);
+  width: fit-content;
+}
+
+.inprogress {
+  font-weight: 550;
+  padding: 5px 8px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(246, 240, 0);
+  width: fit-content;
+}
+
+.deny {
+  font-weight: 550;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background-color: rgb(202, 38, 38);
+  width: fit-content;
+  color: white;
+}
+
+.withdraw {
+  color: white;
+  font-weight: 550;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background-color: rgb(73, 73, 73);
+  width: fit-content;
+}
+
+/* main css */
+#logo {
+  max-width: 160px;
+  max-height: 120px;
+}
+
+.header-search {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 10px;
+}
+
+.profile-status-container {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 12vh;
+  background-color: white;
+  margin: 5px 15px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 28px rgb(49, 49, 49);
+}
+
+.profile-status {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.trademark-logo {
+  max-width: 300px;
+  max-height: 150px;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+.logo-container {
+  margin-left: 10px;
+  align-items: center;
+}
+
+.register-container {
+  display: flex;
+  margin: 10px;
+  top: 10px;
+}
+
+.trademark {
+  color: #3c4043;
+  font-size: 28px;
+  user-select: none;
+  margin: 0 40px;
+}
+
+.search-container {
+  background-image: linear-gradient(rgb(60, 121, 203), #66c7ee);
+  height: 100%;
+}
+
+.main-title {
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.adv-btn:hover {
+  opacity: 0.6;
+}
+
+.input-bar {
+  outline: none;
+  line-height: 16px;
+  margin-left: 8px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.search-result-container {
+  margin: 24px;
+  border-radius: 10px;
+  min-height: 100vh;
+  margin-bottom: 15vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: white;
+  height: fit-content;
+  width: 30vw;
+  border-radius: 10px;
+}
+
+.input-search-container {
+  display: none;
+}
+
+.input-report {
+  resize: none;
+  width: 100%;
+  height: 100px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../resources/scss/user.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;EACI;EACA;;;AAGJ;EACI;;;AAEJ;AACA;EACI;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;;;AAEJ;EACI;;;AAEJ;EACI;EACA;;;AAEJ;EACI;;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;;;AAEJ;EACI;;;AAEJ;EACI;EACA;;;AAEJ;EACI;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;EACA;;;AAGJ;EACI;;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;;;AAEJ;EACI;;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;;;AAEJ;AACA;EACI;EACA;;;AAEJ;EACI;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;;;AAEJ;EACI;EACA;;;AAEJ;EACI;;;AAEJ;EACI;EACA;;;AAEJ;EACI;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;;;AAGJ;EACI;;;AAEJ;EACI;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;;;AAIJ;EACI;EACA;EACA;EACA;;;AAGJ;EACI;;;AAEJ;EACI;EACA;EACA%22,%22file%22:%22user.css%22%7D */

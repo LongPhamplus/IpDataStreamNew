@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/user.css">
+<div class="search-container ">
+    <div class="search-result-container line-heigh-15 flex-style ">
+        <div class="padding-16 flex-style login-container flex-column">
+            <h1 class="txt-align margin-bot-24">Đăng nhập</h1>
+            <form action="/user/login" method="POST">
+                <div class="flex-style margin-bot-24 flex-column">
+                    <input type="email" id="email" name="email" placeholder="Email" class="input-sphsearch flex-grow-1"
+                        required value="{{email}}">
+                    <span class="err-message">{{errorMessage.emailErr}}</span>
+                </div>
+                <div class="flex-style margin-bot-24 flex-column">
+                    <input type="password" id="password" name="password" placeholder="Mật khẩu"
+                        class="input-sphsearch flex-grow-1" required>
+                    <span class="err-message">{{errorMessage.passErr}}</span>
+                </div>
+                <div class="flex-style spa-btw margin-bot-24">
+                    <a href="/user/fogotpass">Quên mật khẩu</a>
+                    <a href="/user/register">Đăng ký</a>
+                </div>
+                <div class="flex-style">
+                    <input type="submit" value="Đăng nhập" class="flex-grow-1 login-btn" required>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

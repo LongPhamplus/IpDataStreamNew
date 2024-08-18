@@ -1,0 +1,132 @@
+<link rel="stylesheet" href="/css/searchPage.css">
+<div class="search-container ">
+    <div class="search-result-container line-heigh-15">
+        <div class="padding-16">
+            <h2 class="margin-bot-24">Đơn đăng ký nhãn hiệu "{{outputData.mo_ta_nhan_hieu}}" số {{outputData.so_don}}
+                của {{outputData.chu_don}}</h2>
+            {{#if login}}
+            <div class="save-btn-container">
+                <a href="/trademark?so_don={{outputData.so_don}}&don_luu={{outputData.so_don}}">
+                    <button class="save-btn cursor-pointer"><i class="fa fa-save"></i><span
+                            style="margin-left: 8px;">Lưu</span></button>
+                </a>
+            </div>
+            {{#if addingCheck}}
+            <p class="err-message margin-bot-24">{{addingErr}}</p>
+            {{/if}}
+            {{/if}}
+            <div class="grid-style grid-col-1-2-4">
+                <div class="grid-item bold">Mẫu nhãn</div>
+                <div class="grid-item"><img class="trademark-logo" src="{{outputData.mau_nhan}}" alt=""></div>
+                <div class="grid-item grid-style margin-top-24">
+                    <div class="grid-style grid-col-4 margin-top-16">
+                        <div class="grid-item bold">Trạng thái</div>
+                        <div class="grid-item {{outputData.tinh_trang_css}}">{{outputData.tinh_trang}}</div>
+                    </div>
+                    <div class="grid-style grid-col-4 margin-top-16">
+                        <div class="grid-item bold">Số đơn</div>
+                        <div class="grid-item">{{outputData.so_don}}</div>
+                        <div class="grid-item bold">Số đơn gốc</div>
+                        <div class="grid-item">(Số đơn gốc)</div>
+                    </div>
+                    <div class="grid-style grid-col-1-3 margin-top-16">
+                        <div class="grid-item bold">Ngày nộp</div>
+                        <div class="grid-item">{{outputData.ngay_nop_don}}</div>
+                    </div>
+                    <div class="grid-style grid-col-4 margin-top-16">
+                        <div class="grid-item bold">Tháng công bố</div>
+                        <div class="grid-item">{{outputData.ngay_cong_bo}}</div>
+                        <a href="">
+                            <div class="grid-item">Download tài liệu</div>
+                        </a>
+                    </div>
+                    <div class="grid-style grid-col-1-3 margin-top-16">
+                        <div class="grid-item bold">Chủ đơn/Chủ bằng</div>
+                        <div class="grid-item">
+                            <p>{{outputData.chu_don}}</p>
+                            <p>{{outputData.dia_chi_chu_don}}
+                            <p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-style grid-col-4 margin-top-16">
+                <div class="grid-item bold">Mô tả nhãn hiệu</div>
+                <div class="grid-item">{{outputData.mo_ta_nhan_hieu}}</div>
+                <div class="grid-item bold">Màu sắc</div>
+                <div class="grid-item">{{outputData.mau_sac}}</div>
+            </div>
+            <div class="grid-style grid-col-1-3 margin-top-16">
+                <div class="grid-item bold">Danh mục sản phẩm/dịch vụ</div>
+                <div class="grid-item align-justify">
+                    {{{outputData.nhom_san_pham}}}
+                </div>
+            </div>
+            <div class="grid-style grid-col-1-3 margin-top-16">
+                <div class="grid-item bold">Phân loại hình</div>
+                <div class="grid-item">
+                    {{outputData.phan_loai_hinh}}
+                </div>
+            </div>
+            <div class="grid-style grid-col-1-3 margin-top-16">
+                <div class="grid-item bold">Đại diện SHCN</div>
+                <div class="grid-item">
+                    {{{outputData.dai_dien_shcn}}}
+                </div>
+            </div>
+            <hr class="margin-top-24 margin-bot-24">
+            <h3 class="margin-bot-24 small-title">Chi tiết cấp bằng</h3>
+            {{#if cap_bang}}
+            <div class="grid-style grid-col-5-1">
+                <div>
+                    <div class="grid-item grid-style grid-col-6">
+                        <div class="grid-item bold">Số bằng</div>
+                        <div class="grid-item">(số bằng)</div>
+                        <div class="grid-item bold">Ngày cấp</div>
+                        <div class="grid-item">(ngày cấp)</div>
+                        <div class="grid-item bold">Thời gian</div>
+                        <div class="grid-item">(thời gian)</div>
+                    </div>
+                    <div class="grid-item grid-style margin-top-16 grid-col-4">
+                        <div class="grid-item bold">Mô tả nhãn hiệu</div>
+                        <div class="grid-item">(VI) ETi CIN</div>
+                        <div class="grid-item bold">Màu sắc</div>
+                        <div class="grid-item">Đen, đỏ, trắng, xanh dương đậm, xanh dương nhạt, tím.</div>
+                    </div>
+                    <div class="grid-item grid-style grid-col-1-3 margin-top-16">
+                        <div class="grid-item bold">Danh mục sản phẩm/Dịch vụ</div>
+                        <div class="grid-item">na</div>
+                    </div>
+                    <div class="grid-item grid-style grid-col-1-3 margin-top-16">
+                        <div class="grid-item bold">Phân loại hình</div>
+                        <div class="grid-item">
+                            01.13.01 (7),01.13.15 (7),02.09.23 (7),02.09.25 (7),13.01.06 (7),26.13.25 (7),26.15.01 (7)
+                        </div>
+                    </div>
+                    <div class="grid-item grid-style grid-col-1-3 margin-top-16">
+                        <div class="grid-item bold">Tuyên bố bảo hộ/yếu tố loại trừ</div>
+                        <div class="grid-item">na</div>
+                    </div>
+                    <div class="grid-item grid-style grid-col-1-3 margin-top-16">
+                        <div class="grid-item bold">Đại diện SHCN</div>
+                        <div class="grid-item">na</div>
+                    </div>
+                </div>
+                <a href="">
+                    <div class="grid-item">Download Tài liệu công báo</div>
+                </a>
+            </div>
+            {{else}}
+            <p class="bold margin-left-16">Đơn chưa được cấp bằng</p>
+            {{/if}}
+            <hr class="margin-top-24 margin-bot-24">
+            <h3 class="margin-bot-24 margin-top-24 small-title">Tiến trình xử lý</h3>
+            <div class="grid-style grid-col-3">
+                <div class="grid-item small-title">Tiến trình</div>
+                <div class="grid-item small-title">Ngày tiến trình</div>
+                <div class="grid-item small-title">Tài liệu</div>
+            </div>
+            {{{outputData.tttd_html}}}
+        </div>
+    </div>
+</div>

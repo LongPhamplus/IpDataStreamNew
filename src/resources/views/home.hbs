@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="/css/homePage.css">
+
+<div class="search-container ">
+    <form action="/searchPage" class="sp-search-container ">
+        <div class="title-spsearch flex-style">
+            <div class="main-title margin-top-24 usersl-none">
+                <p class="vie-des">Tìm Kiếm Cơ Bản</p>
+                <p class="eng-des">Simple Search</p>
+            </div>
+        </div>
+        <div class="search-bar flex-style margin-top-24">
+            <div class="input-container flex-style">
+                <input name="mo_ta_nhan_hieu" class="input-spsearch" type="text" placeholder="Nhập số đơn hoặc Nhãn hiệu" required>
+                <button type="submit" class="fa fa-search search-btn margin-left-16"></button>
+            </div>
+            <input class="input-spsearch margin-top-24 opacity-06" type="text" placeholder="Sáng chế" disabled>
+            <input class="input-spsearch margin-top-24 opacity-06" type="text" placeholder="Kiểu dáng" disabled>
+        </div>
+        <div>
+            <div class="button-style advsearch-btn">TÌM KIẾM NÂNG CAO</div>
+        </div>
+    </form>
+    <form action="/searchPage" class="adv-search-container disp-none">
+        <div class="title-spsearch flex-style">
+            <div class="main-title margin-top-24 usersl-none">
+                <p class="vie-des ">Tìm Kiếm Nâng Cao</p>
+                <p class="eng-des">Advance Search</p>
+            </div>
+        </div>
+        <div class="search-bar flex-style margin-top-16">
+            <div class="input-container flex-style">
+                <input name="mo_ta_nhan_hieu" class="input-spsearch" type="text" placeholder="Nhập số đơn hoặc Nhãn hiệu" required>
+                <button type="submit" class="fa fa-search search-btn margin-left-16"></button>
+            </div>
+            <div class="flex-style usersl-none">
+                <label for="cong-khai" class="check-trademark margin-top-24 margin-left-16">
+                    <input name="cong-khai" type="checkbox" class="cursor-pointer" id="cong-khai">
+                    <span class="cursor-pointer ">Đơn công khai</span>
+                </label>
+                <label for="cong-bo" class="check-trademark margin-top-24 margin-left-16">
+                    <input name="cong-bo" type="checkbox" class="cursor-pointer" id="cong-bo">
+                    <label for="cong-bo" class="cursor-pointer ">Đơn công bố</label>
+                </label>
+            </div>
+        </div>
+        <div class="profile-status-container">
+            <div class="profile-status grid-style grid-col-1-2-2 usersl-none">
+                <div class="grid-style">
+                    <div class="box">
+                        Tìm kiếm tình trạng hồ sơ
+                    </div>
+                </div>
+                <div class="grid-style margin-left-24">
+                    <input name="dich_vu_nhom_sp" class="box height-13px" placeholder="Sản phẩm dịch vụ(mỳ, quần áo, ...)"></input>
+                    <input name="chu_don" class="box margin-top-16 height-13px" placeholder="Chủ đơn"></input>
+                </div>
+                <div class="grid-style grid-col-1-1">
+                    <label class="check-box margin-left-24 cursor-pointer height-13px dang-xu-ly">
+                        <input type="checkbox" name="dang-xu-ly" id="">
+                        <span>Đang xử lý</span>
+                    </label>
+                    <label class="check-box margin-left-24 cursor-pointer height-13px">
+                        <input type="checkbox" name="cap-bang" id="">
+                        <span>Cấp bằng</span>
+                    </label>
+                    <label class="check-box margin-top-16 margin-left-24 cursor-pointer height-13px">
+                        <input type="checkbox" name="rut-don" id="">
+                        <span>Rút đơn</span>
+                    </label>
+                    <label class="check-box margin-top-16 margin-left-24 cursor-pointer height-13px">
+                        <input type="checkbox" name="tu-choi" id="">
+                        <span>Từ chối</span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>

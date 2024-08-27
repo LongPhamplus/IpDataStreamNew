@@ -6,9 +6,11 @@ const route = require('./routers')
 const initializePassport = require('./config/passportConfig')
 const path = require('path')
 const passport = require('passport')
-const LocalStrategy = require('passport-local').Strategy
+
 const app = express()
 const port = 3000
+
+
 
 // Cấu hình session
 app.use(session({
@@ -16,6 +18,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }))
+
 // Cấu hình passport
 initializePassport(passport)
 app.use(passport.initialize());

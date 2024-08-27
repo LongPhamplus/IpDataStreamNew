@@ -23,7 +23,7 @@ async function getData(data) {
             if (data.hasOwnProperty(key)) {
                 if (data[key] != '' && check == false) {
                     check = true
-                    myquery = `select * from nhan_hieu 
+                    myquery = `select * from nhanhieu 
                     where`
                 }
                 if (key == 'page') {
@@ -43,7 +43,7 @@ async function getData(data) {
                     if (myquery[myquery.length - 1] != 'e') myquery += ' and '
                     let name = key, content = data[key].trim()
                     if (content[0] >= '0' && content[0] <= '9') {
-                        if (name == "mo_ta_nhan_hieu") {
+                        if (name == "ten_nhan_hieu") {
                             name = "so_don"
                         }
                     }
